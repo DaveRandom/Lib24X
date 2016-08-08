@@ -1,0 +1,22 @@
+{
+    "name": "daverandom/lib24x",
+    "description": "Client SDK for the 24X SMS web service",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Chris Wright",
+            "email": "cw@daverandom.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-soap": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lib24X\\": "src/"
+        },
+        "files": ["src/Exceptions.php"]
+    }
+}
