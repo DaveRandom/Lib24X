@@ -86,4 +86,13 @@ class SMS
     {
         return $this->text;
     }
+
+    public function getMessageCount(): int
+    {
+        $length = strlen($this->text);
+
+        return $length > 160
+            ? (int)(ceil($length) / 153)
+            : 1;
+    }
 }
